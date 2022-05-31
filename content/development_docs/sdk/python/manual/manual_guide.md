@@ -7,9 +7,9 @@ keyword: SDK,云平台, 创建云服务器, 云计算
 
 
 
-使用 qingcloud-sdk 前请先在云平台管理控制台申请 access key，申请后便可以自由使用了。
+使用 petaexpress-sdk 前请先在云平台管理控制台申请 access key，申请后便可以自由使用了。
 
-> 注：如果您期望在IAM身份的信任设备上使用 qingcloud-sdk ，也可以不用申请 access key ，而是到 IAM 控制面板创建基于该信任设备的IAM即可。
+> 注：如果您期望在IAM身份的信任设备上使用 petaexpress-sdk ，也可以不用申请 access key ，而是到 IAM 控制面板创建基于该信任设备的IAM即可。
 
 下面举几个例子来帮助大家快速上手，全部功能请见后面的 [函数列表](#id3) 。
 
@@ -18,8 +18,8 @@ keyword: SDK,云平台, 创建云服务器, 云计算
 发起请求前要先建立连接:
 
 ```
->>> import qingcloud.iaas
->>> conn = qingcloud.iaas.connect_to_zone(
+>>> import petaexpress.iaas
+>>> conn = petaexpress.iaas.connect_to_zone(
  'pek3', # 你的资源所在的节点ID，可在控制台切换节点的地方查看，如 'pek3', 'ap2a', 'gd2' 等
  'access key id', 
  'secret access key' 
@@ -29,8 +29,8 @@ keyword: SDK,云平台, 创建云服务器, 云计算
 > 注：如果您正在使用 IAM 身份建立连接，则无需提供 `access key id` 和 `secret access key` ：
 
 ```
->>> import qingcloud.iaas
->>> conn = qingcloud.iaas.connect_to_zone(
+>>> import petaexpress.iaas
+>>> conn = petaexpress.iaas.connect_to_zone(
  'pek3', # 你的资源所在的节点ID，可在控制台切换节点的地方查看，如 'pek3', 'ap2a', 'gd2' 等
  None, 
  None

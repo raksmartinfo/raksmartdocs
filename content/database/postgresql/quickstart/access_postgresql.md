@@ -45,15 +45,15 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
 |:----|:----|:----|
 |-U           |数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../manual/mgt_account/user_account)。           | pguser |
 |-h          |数据库节点的 IP 或者双节点集群的 VIP。                 |192.168.100.0|
-|-d          |数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud |
-|密码          |数据库用户密码。<br>新建数据库默认账号密码 `qingcloud1234`              | qingcloud1234 |
+|-d          |数据库名称。 <br>新建数据库默认名称 `petaexpress`。            | petaexpress |
+|密码          |数据库用户密码。<br>新建数据库默认账号密码 `petaexpress1234`              | petaexpress1234 |
 
 ## 连接数据库示例
 
 1. 输入如下命令，并输入密码，访问目标数据库。
    
    ```bash
-    psql -U qingcloud -h 192.168.100.246 -d qingcloud
+    psql -U petaexpress -h 192.168.100.246 -d petaexpress
    ```
 
 2. 执行命令`\l`，查看当前 PostgreSQL 数据库信息。

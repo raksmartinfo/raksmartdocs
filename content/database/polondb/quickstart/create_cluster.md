@@ -101,9 +101,9 @@ draft: false
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
-|   数据库名称     |  输入初始数据库名称。<li>默认为 `qingcloud`。  |
-|   user_name     |  输入数据库初始用户账号名。<li>默认为 `qingcloud`。  |
-|   密码   |  输入数据库初始用户账号密码。<li>默认为 `qingcloud1234`。   |
+|   数据库名称     |  输入初始数据库名称。<li>默认为 `petaexpress`。  |
+|   user_name     |  输入数据库初始用户账号名。<li>默认为 `petaexpress`。  |
+|   密码   |  输入数据库初始用户账号密码。<li>默认为 `petaexpress1234`。   |
 |   更多服务环境参数     |   点击展开参数列，可配置更多数据库参数。   |
 
 ![参数设置](../../_images/base_step_5.png)

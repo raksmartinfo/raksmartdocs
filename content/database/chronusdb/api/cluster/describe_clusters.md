@@ -88,7 +88,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=DescribeClusters
+https://api.petaexpress.com/iaas/?action=DescribeClusters
 &clusters.1=cl-q1witcdk
 &limit=20
 &reverse=1
@@ -135,7 +135,7 @@ https://api.qingcloud.com/iaas/?action=DescribeClusters
       "description":"",
       "tags":[],
       "app_info":{
-        "app_name":"ZooKeeper on QingCloud",
+        "app_name":"ZooKeeper on PetaExpress",
         "app_id":"app-tg3lbp0a",
         "icon":"ca-iwg9qvsx"
       },

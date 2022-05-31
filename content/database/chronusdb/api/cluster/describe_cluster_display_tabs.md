@@ -32,7 +32,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?
+https://api.petaexpress.com/iaas/?
 action=DescribeClusterDisplayTabs
 &cluster=cl-2gi2b3oc
 &display_tabs=roles

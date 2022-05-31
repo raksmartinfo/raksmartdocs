@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifySpanAttributes
+https://api.petaexpress.com/iaas/?action=ModifySpanAttributes
 &ip_addr=1.2.3.4
 &COMMON_PARAMS
 ```

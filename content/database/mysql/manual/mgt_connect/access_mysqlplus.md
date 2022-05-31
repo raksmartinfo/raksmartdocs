@@ -60,7 +60,7 @@ mysql -h <mysqlServerName> -P <port> -u <userName> -p -D <databaseName> -ssl-ca=
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
-|-h          |数据库内网或外网连接地址。       | <li>192.168.00.00  <li>gz-cdb-xx123xx.mysql.qingcloud.link |
+|-h          |数据库内网或外网连接地址。       | <li>192.168.00.00  <li>gz-cdb-xx123xx.mysql.petaexpress.link |
 |-P          |数据库端口号。                 |3306|
 |-u          |用户账号名称。                |test_mysql|
 |-p          |用户账号密码。<li> 为保障密码安全，`-p`一般空密码。在执行命令后输入密码，回车即可。<li>若需填写该参数，`-p`与密码之间不能有空格。            |test_mysql|
@@ -80,7 +80,7 @@ mysql -h <mysqlServerName> -P <port> -u <userName> -p -D <databaseName> -ssl-ca=
 **连接成功**回显示例：
 
 ```shell
-$ mysql -h gz-cdb-xx123xx.mysql.qingcloud.link -P <3306> -u test_mysql -p
+$ mysql -h gz-cdb-xx123xx.mysql.petaexpress.link -P <3306> -u test_mysql -p
 Enter password：
 Welcome to the MySQL monitor.   Commands end with ; or \g.
 Your MySQL connection id is 20

@@ -75,7 +75,7 @@ draft: false
 > 可自行修改 `job.setNumReduceTasks()` 中 Reduce 数目。
 
 ```java
-  package com.qingcloud.hbase
+  package com.petaexpress.hbase
 
   import org.apache.hadoop.conf.Configuration;
   import org.apache.hadoop.fs.Path;
@@ -177,7 +177,7 @@ hbase-tools-1.0.0.jar 是将上述代码打成的jar包，APP_HOME 是 jar 包�
 ```shell
   cd /opt/hadoop
 
-  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.qingcloud.hbase.ImportByMR /user/inputPath
+  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.petaexpress.hbase.ImportByMR /user/inputPath
 ```
 
 ## 方案二
@@ -185,7 +185,7 @@ hbase-tools-1.0.0.jar 是将上述代码打成的jar包，APP_HOME 是 jar 包�
 方案二 MapReduce 代码如下，Map 对数据做进一步处理，Reduce 无需指定，会根据 Map 的 outputValue 自动选择实现。
 
 ```java
-  package com.qingcloud.hbase
+  package com.petaexpress.hbase
 
   import org.apache.hadoop.conf.Configuration;
   import org.apache.hadoop.fs.Path;
@@ -262,7 +262,7 @@ hbase-tools-1.0.0.jar 是将上述代码打成的 jar 包，APP_HOME 是 jar 包
 
   export HADOOP_CLASSPATH=`/opt/hbase/bin/hbase classpath`
 
-  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.qingcloud.hbase.ImportByBulkLoad /user/inputPath /user/outputPath
+  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.petaexpress.hbase.ImportByBulkLoad /user/inputPath /user/outputPath
 
   bin/hadoop jar /opt/hbase/lib/hbase-server-<VERSION>.jar completebulkload /user/outputPath test_import
 ```

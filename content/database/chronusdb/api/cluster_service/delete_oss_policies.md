@@ -36,7 +36,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
+https://api.petaexpress.com/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
 &action=RunClusterCustomService
 &cluster=cl-yxgxofd3
 &service=delete_oss_policies

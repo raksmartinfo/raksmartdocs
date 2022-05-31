@@ -12,7 +12,7 @@ weight: 15
 
 - Harbor 镜像仓库应用不支持滚动升级，需要关闭集群后进行手动升级。
 
-- `Harbor 1.7.1` 以前的版本在升级前请手工备份修改过的 Harbor 配置，包括 **LDAP认证** 、**邮箱**、**系统配置**及**复制管理**，升级完毕后需要手动重新填写；`Harbor 1.7.1 - QingCloud 1.2.0` 以上的版本不再需要备份及重设配置。如需协助请通过工单获得支持。
+- `Harbor 1.7.1` 以前的版本在升级前请手工备份修改过的 Harbor 配置，包括 **LDAP认证** 、**邮箱**、**系统配置**及**复制管理**，升级完毕后需要手动重新填写；`Harbor 1.7.1 - PetaExpress 1.2.0` 以上的版本不再需要备份及重设配置。如需协助请通过工单获得支持。
 
   <img src="/container/harbor/_images/man15_config_page.png" alt="man15_config_page" style="zoom:50%;" />
 

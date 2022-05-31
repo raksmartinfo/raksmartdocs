@@ -32,20 +32,20 @@ MongoDB 目前支持 3.4.5、3.6.8 和 4.0.3 三个内核版本。支持**并行
     <tr><th style="width: 320px">升级前版本</th><th style="width:320px">目标版本</th></tr>
     <tr><td colspan="7"><b>原地升级</b></td></tr>
     <tr><td>MongoDB 3.4.5 (WiredTiger)</td><td>MongoDB 3.4.5 - Qingcloud 1.0.1</td></tr>
-    <tr><td>MongoDB 3.4.5 (WiredTiger)</td><td>MongoDB 3.6.8 - QingCloud 1.6.1</td></tr>
-    <tr><td>MongoDB 3.6.8 - QingCloud 1.6.1</td><td>MongoDB 4.0.3 - QingCloud 1.7.0</td></tr>
+    <tr><td>MongoDB 3.4.5 (WiredTiger)</td><td>MongoDB 3.6.8 - PetaExpress 1.6.1</td></tr>
+    <tr><td>MongoDB 3.6.8 - PetaExpress 1.6.1</td><td>MongoDB 4.0.3 - PetaExpress 1.7.0</td></tr>
     <tr><td colspan="7"><b>并行升级</b></td></tr>
     <tr><td>MongoDB 3.4.5 (WiredTiger)</td><td>MongoDB 3.6.8 - v1.0.0</td></tr>
     <tr><td>MongoDB 3.4.5 - Qingcloud 1.0.1</td><td>MongoDB 3.6.8 - v1.0.0</td></tr>
-    <tr><td>MongoDB 3.6.8 - QingCloud 1.6.1</td><td>MongoDB 3.6.8 - v1.0.0</td></tr>
-    <tr><td>MongoDB 3.6.8 - QingCloud 1.6.1</td><td>MongoDB 4.0.3 - v1.0.0</td></tr>
+    <tr><td>MongoDB 3.6.8 - PetaExpress 1.6.1</td><td>MongoDB 3.6.8 - v1.0.0</td></tr>
+    <tr><td>MongoDB 3.6.8 - PetaExpress 1.6.1</td><td>MongoDB 4.0.3 - v1.0.0</td></tr>
     <tr><td>MongoDB 3.6.8 - v1.0.0</td><td>MongoDB 4.0.3 - v1.0.0</td></tr>
-    <tr><td>MongoDB 4.0.3 - QingCloud 1.7.0</td><td>MongoDB 4.0.3 - v1.0.0</td></tr>
+    <tr><td>MongoDB 4.0.3 - PetaExpress 1.7.0</td><td>MongoDB 4.0.3 - v1.0.0</td></tr>
 </table>
 
 ## 约束限制
 
-- 不支持跨内核版本升级，仅支持升级到临近内核版本的更高版本。例如，`MongoDB 3.4.5 (WiredTiger)`不能直接升级到 `MongoDB 4.0.3-v1.0.0`，但 `MongoDB 3.6.8 - QingCloud 1.6.1` 可升级到 `MongoDB 4.0.3-v1.0.0`。
+- 不支持跨内核版本升级，仅支持升级到临近内核版本的更高版本。例如，`MongoDB 3.4.5 (WiredTiger)`不能直接升级到 `MongoDB 4.0.3-v1.0.0`，但 `MongoDB 3.6.8 - PetaExpress 1.6.1` 可升级到 `MongoDB 4.0.3-v1.0.0`。
 - 仅检测到有新版本时，才开放升级操作。
 - 仅支持回退到升级前版本。
 - 仅检查到升级失败时，才开放降级操作。

@@ -69,13 +69,13 @@ keyword: 云平台, 云计算, QKE, 容器, 存储卷
            deletionGracePeriodSeconds: 0
            deletionTimestamp: 2019-06-09T00:47:49Z
            finalizers:
-           - external-attacher/csi-qingcloud
+           - external-attacher/csi-petaexpress
            name: csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883
            resourceVersion: "1178846"
            selfLink: /apis/storage.k8s.io/v1/volumeattachments/csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883
            uid: a21a70df-88d7-11e9-aed1-525433888127
        spec:
-           attacher: csi-qingcloud
+           attacher: csi-petaexpress
            nodeName: i-5n8osu8t
            source:
                persistentVolumeName: pvc-93e24c1d88d711e9
@@ -92,13 +92,13 @@ keyword: 云平台, 云计算, QKE, 容器, 存储卷
            deletionGracePeriodSeconds: 0
            deletionTimestamp: 2019-06-09T00:51:53Z
            finalizers:
-           - external-attacher/csi-qingcloud
+           - external-attacher/csi-petaexpress
            name: csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883
            resourceVersion: "1180401"
            selfLink: /apis/storage.k8s.io/v1/volumeattachments/csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883
            uid: a21a70df-88d7-11e9-aed1-525433888127
        spec:
-           attacher: csi-qingcloud
+           attacher: csi-petaexpress
            nodeName: i-5n8osu8t
            source:
                persistentVolumeName: pvc-93e24c1d88d711e9
@@ -124,7 +124,7 @@ keyword: 云平台, 云计算, QKE, 容器, 存储卷
            selfLink: /apis/storage.k8s.io/v1/volumeattachments/csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883
            uid: a21a70df-88d7-11e9-aed1-525433888127
        spec:
-           attacher: csi-qingcloud
+           attacher: csi-petaexpress
            nodeName: i-5n8osu8t
            source:
                persistentVolumeName: pvc-93e24c1d88d711e9

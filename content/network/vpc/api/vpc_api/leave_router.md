@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=LeaveRouter
+https://api.petaexpress.com/iaas/?action=LeaveRouter
 &vxnets.1=vxnet-rzg2llb
 &router=rtr-9iy0lt3s
 &zone=pek3a

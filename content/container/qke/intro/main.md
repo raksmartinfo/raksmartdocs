@@ -26,8 +26,8 @@ QKE 服务集成了云平台的云服务器、存储、网络等资源，通过�
 
 - 集成 [Calico](https://www.projectcalico.org/)、[Flannel](https://github.com/coreos/flannel) 、hostnic 网络插件供用户选择使用。
 - 集成 ipvs、iptables 代理模式供用户选择使用。
-- 集成 [云平台存储插件](https://github.com/yunify/qingcloud-csi) ，可以自动创建存储资源，支持基础型、企业型、容量型、企业分布式 NeonSAN 等云平台硬盘，支持硬盘自动扩容和自动迁移。
-- 集成 [云平台管理插件](https://github.com/yunify/qingcloud-cloud-controller-manager) ，可以自动创建负载均衡器、公网 IP，一键直达公网访问。
+- 集成 [云平台存储插件](https://github.com/yunify/petaexpress-csi) ，可以自动创建存储资源，支持基础型、企业型、容量型、企业分布式 NeonSAN 等云平台硬盘，支持硬盘自动扩容和自动迁移。
+- 集成 [云平台管理插件](https://github.com/yunify/petaexpress-cloud-controller-manager) ，可以自动创建负载均衡器、公网 IP，一键直达公网访问。
 - 支持一键增删工作节点。
 - `自 QKE 2.0.0 起` 支持一键部署 GPU 节点。
 - 可插拔 [OpenPitrix 应用商店](https://kubesphere.com.cn/docs/pluggable-components/app-store/)（需通过 [集群参数](/container/qke/manual/mgt_cluster/paras_cfg/) 开启），提供应用商店与应用的生命周期管理，支持通过 3 种方式一键部署应用。

@@ -39,7 +39,7 @@ config.json 中定义的参数，在控制台上由用户设置，控制台支�
 
 镜像制作请参考：[镜像制作](/appcenter/dev-platform/cluster-developer-guide/image-build/build)
 
-我们提供了从简单到复杂的应用配置文件样例，详情请参看[云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)，也提供一些[范例](https://github.com/search?q=topic%3Aqingcloud-sample-apps+org%3AQingCloudAppcenter&type=Repositories)供参考。
+我们提供了从简单到复杂的应用配置文件样例，详情请参看[云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)，也提供一些[范例](https://github.com/search?q=topic%3Apetaexpress-sample-apps+org%3APetaExpressAppcenter&type=Repositories)供参考。
 
 
 ### 测试应用版本

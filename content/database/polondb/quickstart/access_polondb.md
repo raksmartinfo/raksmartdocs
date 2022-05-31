@@ -60,7 +60,7 @@ $ psql -U <userName> -h <port> -d <serverName>
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
-|-U           |数据库用户账号名。<br>新建数据库默认账号名 `qingcloud`。      | qingcloud |
+|-U           |数据库用户账号名。<br>新建数据库默认账号名 `petaexpress`。      | petaexpress |
 |-h          |集群的 VIP。                 |192.168.100.240|
-|-d          |数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud |
-|密码          |数据库用户密码。<br>新建数据库默认账号密码`qingcloud1234`              | qingcloud1234 |
+|-d          |数据库名称。 <br>新建数据库默认名称 `petaexpress`。            | petaexpress |
+|密码          |数据库用户密码。<br>新建数据库默认账号密码`petaexpress1234`              | petaexpress1234 |

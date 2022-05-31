@@ -38,7 +38,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=RunClusterCustomService
+https://api.petaexpress.com/iaas/?&action=RunClusterCustomService
 &cluster=cl-ouhutv70
 &role=maininstance
 &service=promote_standby

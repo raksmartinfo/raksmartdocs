@@ -14,7 +14,7 @@ draft: false
 
 HBase 集群默认不支持 Phoenix 查询引擎。
 
-- 若需支持 Phoenix 查询引擎，修改配置参数`qingcloud.phoenix.on.hbase.enable` 为 true。
+- 若需支持 Phoenix 查询引擎，修改配置参数`petaexpress.phoenix.on.hbase.enable` 为 true。
   
 - 若需支持 Phoenix 事务支持，修改配置参数`phoenix.transactions.enabled` 为 true。
 

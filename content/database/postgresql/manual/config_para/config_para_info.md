@@ -18,9 +18,9 @@ draft: false
 |<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
 |:----|:----|:----|
 |   数据库版本    |  11、10、9        |   表示当前数据库 PostgreSQL 内核参数。 <li>不可修改。  |
-|   数据库名称      |  -      |   表示新创建的数据库名称。 <li>默认为 `qingcloud`。<li>初始化集群的时候生效，创建后修改无效。  |
+|   数据库名称      |  -      |   表示新创建的数据库名称。 <li>默认为 `petaexpress`。<li>初始化集群的时候生效，创建后修改无效。  |
 |   数据库用户名  |  -  |  表示新创建的数据库用户名。<li>默认为 `pguser`。<li>初始化集群的时候生效，创建后修改无效。 |
-|   数据库密码 | - |  表示新创建的数据库密码。 <li> 默认为 `qingcloud1234`。  |
+|   数据库密码 | - |  表示新创建的数据库密码。 <li> 默认为 `petaexpress1234`。  |
 
 ## pgpool 参数
 

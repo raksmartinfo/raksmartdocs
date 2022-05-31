@@ -39,7 +39,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=ResizeCluster
+https://api.petaexpress.com/iaas/?action=ResizeCluster
 &cluster=cl-q1witcdk
 &cpu=2
 &memory=4096

@@ -72,10 +72,10 @@ ACL 规则是使用 DSL（Domain specific language）定义的， DSL 描述了�
 
 **示例4：**
 
-允许读以 **qingcloud:** 或 **redis:** 开头的 key。
+允许读以 **petaexpress:** 或 **redis:** 开头的 key。
 
 ```
-+@read ~qingcloud:* ~redis:*
++@read ~petaexpress:* ~redis:*
 ```
 
 **示例5：**

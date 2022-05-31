@@ -58,7 +58,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeVxnetInstances
+https://api.petaexpress.com/iaas/?action=DescribeVxnetInstances
 &vxnet=vxnet-ytuyg2q
 &status=running
 &limit=1

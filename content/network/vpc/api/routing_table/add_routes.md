@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=AddRoutes
+https://api.petaexpress.com/iaas/?action=AddRoutes
 &routing_table=rt-w7xy0bq0
 &rules.1.routing_table_name=test1
 &rules.1.network=172.31.0.2

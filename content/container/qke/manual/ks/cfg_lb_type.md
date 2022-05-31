@@ -10,9 +10,9 @@ keyword: 云平台, 云计算, 容器, QKE
 
 ## 背景信息
 
-QKE 从 `v1.0.1` 版本起集成了 [云平台负载均衡器插件](https://github.com/yunify/qingcloud-cloud-controller-manager) ，支持将 KubeSphere 内部的服务和 IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。
+QKE 从 `v1.0.1` 版本起集成了 [云平台负载均衡器插件](https://github.com/yunify/petaexpress-cloud-controller-manager) ，支持将 KubeSphere 内部的服务和 IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。
 
-LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud-controller-manager/blob/v1.3.4/docs/configure.md)。
+LB 插件具体用法请参考[文档](https://github.com/yunify/petaexpress-cloud-controller-manager/blob/v1.3.4/docs/configure.md)。
 
 > **注意**
 >
@@ -60,11 +60,11 @@ LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud
 
    配置以下注解（annotation）：
 
-   - `service.beta.kubernetes.io/qingcloud-load-balancer-eip-ids`
+   - `service.beta.kubernetes.io/petaexpress-load-balancer-eip-ids`
 
      该 annotation 表示要创建公网类型的负载均衡器。在值输入框中填写您在云平台上创建好的公网 IP ID 号，系统会自动创建负载均衡器并绑定此公网 IP。公网 IP 必须是可用状态。
 
-   - `service.beta.kubernetes.io/qingcloud-load-balancer-type`
+   - `service.beta.kubernetes.io/petaexpress-load-balancer-type`
 
      表示负载均衡器的承载能力类型。与 [CreateLoadBalancer](/development_docs/api/command_list/lb/create_loadbalancer/) 接口中的 `loadbalancer_typ` 取值范围相同。
 

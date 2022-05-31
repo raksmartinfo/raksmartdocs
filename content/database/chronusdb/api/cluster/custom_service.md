@@ -34,11 +34,11 @@ ChronusDB 通过自定义服务参数，可管理相应功能，例如存储策�
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
+https://api.petaexpress.com/iaas/?access_key_id=CCCVEESNVLHNZFPLUYZX
 &action=RunClusterCustomService
 &cluster=cl-yxgxofd3
 &service=create_oss_policies
-&service_params=%7B%22policies_name%22%3A%22ossp%22%2C%22end_point%22%3A%22https%3A%2F%2Fs3.pek3b.qingcloud.com%2Fqingstor%bucketname%2Fpath%2F%22%2C%22key_secret%22%3A%22e1O5aUrS8FhgSwjanP%22%2C%22key_id%22%3A%22TEM%22%7D
+&service_params=%7B%22policies_name%22%3A%22ossp%22%2C%22end_point%22%3A%22https%3A%2F%2Fs3.pek3b.petaexpress.com%2Fqingstor%bucketname%2Fpath%2F%22%2C%22key_secret%22%3A%22e1O5aUrS8FhgSwjanP%22%2C%22key_id%22%3A%22TEM%22%7D
 &zone=pek3
 &<COMMON_PARAMS>
 ```

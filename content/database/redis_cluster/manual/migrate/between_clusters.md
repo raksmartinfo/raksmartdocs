@@ -25,7 +25,7 @@ Redis Cluster B：主节点为 192.168.2.14:6379、192.168.2.17:6379、192.168.2
 
    > 注意：
    > `源地址`与`目标地址`的 slots 分布必须一致。
-   > 在不一致的情况下，可以参考 [migrateSlots.sh](https://github.com/QingCloudAppcenter/redis/tree/master/operations) 将 B 的 slots 分布迁移至与 A 一致。
+   > 在不一致的情况下，可以参考 [migrateSlots.sh](https://github.com/PetaExpressAppcenter/redis/tree/master/operations) 将 B 的 slots 分布迁移至与 A 一致。
 
 2. 迁移数据。
 

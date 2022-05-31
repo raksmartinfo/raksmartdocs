@@ -30,7 +30,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?&action=StartClusters
+https://api.petaexpress.com/iaas/?&action=StartClusters
 &clusters.1=cl-q1witcdk
 &zone=pek3b
 &COMMON_PARAMS

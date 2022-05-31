@@ -32,10 +32,10 @@ pg_dump -U <远端数据库账号> -h <远端数据库 IP> -t <表名> <数据�
 > 
 > 数据库名缺省为数据库用户账号名。
 
-导出远端数据库全部数据示例：远端数据库 IP 地址为 `192.168.100.246` ，数据库名为 `qingcloud`，目标文件及路径为`/tmp/pgdatabk.sql`。
+导出远端数据库全部数据示例：远端数据库 IP 地址为 `192.168.100.246` ，数据库名为 `petaexpress`，目标文件及路径为`/tmp/pgdatabk.sql`。
 
 ```shell
-pg_dump -U qingcloud -h 192.168.100.246 qingcloud  > /tmp/pgdatabk.sql
+pg_dump -U petaexpress -h 192.168.100.246 petaexpress  > /tmp/pgdatabk.sql
 ```
 
 ![数据导出](../../_images/pg_datadump.png)
@@ -56,10 +56,10 @@ pg_dump -U qingcloud -h 192.168.100.246 qingcloud  > /tmp/pgdatabk.sql
    psql -d <目标数据库名> -U <目标数据库账号> -h <目标数据库 IP > -f < <路径/文件名.sql>
    ```
 
-数据库名称默认为 `qingcloud`，可直接作为导入用户账号。示例如下：
+数据库名称默认为 `petaexpress`，可直接作为导入用户账号。示例如下：
 
 ```shell
-psql -d qingcloud -U root -h 192.168.100.6 -f /tmp/pgdatabk.sql
+psql -d petaexpress -U root -h 192.168.100.6 -f /tmp/pgdatabk.sql
 ```
 
 ![数据导入](../../_images/pg_dataimport.png)
@@ -75,9 +75,9 @@ pg_dump -U <远端数据库账号> -h <远端数据库 IP> <远端数据库名> 
 示例如下：
 
 ```bash
-export PGPASSWORD=qingcloud1234
+export PGPASSWORD=petaexpress1234
 #PGPASSWORD为数据库初始账号默认密码
-pg_dump -U qingcloud -h 192.168.100.246 qingcloud -w | psql -d qingcloud -U root -h 192.168.100.6 -W
+pg_dump -U petaexpress -h 192.168.100.246 petaexpress -w | psql -d petaexpress -U root -h 192.168.100.6 -W
 ```
 
 ![数据导入](../../_images/pg_importdataonline.png)

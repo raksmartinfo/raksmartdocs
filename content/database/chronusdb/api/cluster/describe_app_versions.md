@@ -55,7 +55,7 @@ draft: false
 ### 请求示例
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeAppVersions
+https://api.petaexpress.com/iaas/?action=DescribeAppVersions
 &app_ids.1=app-tg3lbp0a
 &limit=20
 &COMMON_PARAMS
@@ -77,7 +77,7 @@ https://api.qingcloud.com/iaas/?action=DescribeAppVersions
       "create_time":"2017-04-21T02:34:24Z",
       "visibility":"public",
       "status_time":"2017-04-21T02:34:24Z",
-      "console_id":"qingcloud",
+      "console_id":"petaexpress",
       "name":"v1.0 - ZooKeeper 3.4.9"
     }
   ],

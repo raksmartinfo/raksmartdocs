@@ -35,7 +35,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?action=CreateGroupRoles
+https://api.petaexpress.com/iaas/?action=CreateGroupRoles
 &role_type=rule
 &group_role_name=a
 &description=

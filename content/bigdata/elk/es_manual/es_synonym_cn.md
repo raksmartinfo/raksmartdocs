@@ -37,7 +37,7 @@ draft: false
 
    > **说明**
    >
-   > `ELK 5.6.16 - QingCloud 1.5.0` 之前的版本需要重启集群中的 Elasticsearch 节点使词典生效，待集群恢复 `green` 状态（可通过以下命令查看状态，等待 `status` 字段变为 `green` ）：
+   > `ELK 5.6.16 - PetaExpress 1.5.0` 之前的版本需要重启集群中的 Elasticsearch 节点使词典生效，待集群恢复 `green` 状态（可通过以下命令查看状态，等待 `status` 字段变为 `green` ）：
    
    ```bash
    curl $ES_IP:9200/_cluster/health?pretty
@@ -47,7 +47,7 @@ draft: false
 
    ```bash
    INDEX=synonym-test
-   MAPPING_TYPE=_doc      # ELK 6.8.0 - QingCloud 2.1.0 以前版本请去掉开头的下划线，即：doc
+   MAPPING_TYPE=_doc      # ELK 6.8.0 - PetaExpress 2.1.0 以前版本请去掉开头的下划线，即：doc
    
    # 创建 索引
    curl -H "Content-Type: application/json" -XPUT http://$ES_IP:9200/$INDEX -d'

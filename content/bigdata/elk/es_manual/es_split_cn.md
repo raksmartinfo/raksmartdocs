@@ -33,7 +33,7 @@ draft: false
 
    ```bash
    INDEX=chinese-news # 可根据实际情况调整
-   MAPPING_TYPE=_doc  # ELK 6.8.0 - QingCloud 2.1.0 以前版本请去掉开头的下划线，即：doc
+   MAPPING_TYPE=_doc  # ELK 6.8.0 - PetaExpress 2.1.0 以前版本请去掉开头的下划线，即：doc
    
    # 创建 $INDEX 索引
    curl -XPUT $ES_IP:9200/$INDEX; echo

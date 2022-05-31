@@ -49,7 +49,7 @@ draft: false
 ### 请求示例
 
 ```url
-https://api.qingcloud.com/iaas/?zone=test
+https://api.petaexpress.com/iaas/?zone=test
 &project_id=pj-xzvlxlb5
 &action=DescribeGroupRoleRules
 &offset=0

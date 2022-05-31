@@ -56,7 +56,7 @@ draft: false
    > 
    > 若收到有关外键的错误，通常是由于操作顺序有误。可以先删除外键，再重新添加数据库对象。
 
-4. 在 PolonDB 集群获取 `qingcloud_decoding.so` 的动态库。
+4. 在 PolonDB 集群获取 `petaexpress_decoding.so` 的动态库。
    
    > **注意**
    > 
