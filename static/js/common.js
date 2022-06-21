@@ -281,4 +281,5 @@ function saveAllPdf() {
   //     saveAs(file, "mypdffilename.pdf");
   // };
   // oReq.send();
+  console.log("1111");
 }

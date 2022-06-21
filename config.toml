@@ -16,6 +16,9 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
+
+
+
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [markup.highlight]
@@ -40,15 +43,33 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.zh]
-title = "ExpressDocs 文档"
-description = "ExpressDocs 文档站点"
+title = "raksmartdocs 文档"
+description = "raksmartdocs 文档站点"
 languageName ="中文"
-contentDir = "content"
+contentDir = "content/zh"
 # Weight used for sorting.
 weight = 1
 time_format_default = "2020-12-01"
 time_format_blog = "2020-12-01"
-
+[languages.en]
+    contentDir = "content/en" #English
+    weight = 1
+    languageName = "English" # Name shown in the main menu
+    subtitle = "This is subtitle for this website"
+    [languages.en.params]
+      linkedin = "/en/"
+    [[languages.en.menu.main]]
+        name = "Blog"
+        url = "/"
+        weight = 1
+    [[languages.en.menu.main]]
+        name = "About"
+        url = "page/about/"
+        weight = 3
+    [[languages.en.menu.main]]
+        name = "Tags"
+        url = "tags"
+        weight = 3
 [module]
   [module.hugoVersion]
     extended = true
