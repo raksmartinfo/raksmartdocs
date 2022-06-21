@@ -7,10 +7,10 @@
 {{ if $gh_repo }}
 <div class="td-page-meta page-meta-actions ml-2 pb-1 mb-0">
 {{ $editURL := printf "%s/edit/%s/content/%s" $gh_repo $gh_branch $pathFormatted }}
-{{ if and ($gh_subdir) (.Site.Language.Lang) }}
-{{ $editURL = printf "%s/edit/%s/%s/content/%s/%s" $gh_repo $gh_branch $gh_subdir ($.Site.Language.Lang) $pathFormatted }}
-{{ else if $gh_subdir }}
+{{ if $gh_subdir }}
 {{ $editURL = printf "%s/edit/%s/%s/content/%s" $gh_repo $gh_branch $gh_subdir $pathFormatted }}
+{{ else if .Site.Language.Lang }}
+{{ $editURL = printf "%s/edit/%s/content/%s/%s" $gh_repo $gh_branch .Lang $pathFormatted }}
 {{ end }}
 {{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (htmlEscape $.Title )}}
 {{ if ne .Type "videoMain"}}
