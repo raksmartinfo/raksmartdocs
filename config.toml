@@ -54,6 +54,8 @@ time_format_blog = "2020-12-01"
 [languages.en]
     contentDir = "content/en" #English
     weight = 1
+    title = "raksmartdocs Docs"
+    description = "raksmartdocs Docs"
     languageName = "English" # Name shown in the main menu
     subtitle = "This is subtitle for this website"
     [languages.en.params]
