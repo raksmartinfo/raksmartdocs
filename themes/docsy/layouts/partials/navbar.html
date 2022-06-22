@@ -51,17 +51,21 @@
         {{ range .Site.Home.AllTranslations }}
         <a class="zh-en-item" href="{{ $root.RelPermalink }}">{{ .Language.Lang  }} </a> 
         {{ end }} -->
-        <a class="zh-en-item"  id="zh-item" data="" >中文</a> /
-        <a class="zh-en-item" id="english-item" data="en" >English</a>
+        {{$Permalink := .Permalink	}}
+        {{$RelPermalink	:= .RelPermalink}}
+        {{$Origin := replace $Permalink $RelPermalink "/"}}
+        {{ if eq .Lang "en"}}
+          {{$NoLangPath := replace $RelPermalink "/en/" ""}}
+          {{ $link := printf "%s%s" $Origin $NoLangPath }}
+          <a class="zh-en-item"  id="zh-item" href="{{ $link}}" data="{{$NoLangPath}}" >简体中文</a> 
+        {{ end }}
+        {{ if eq .Lang "zh"}}
+          {{$NoLangPath := replace $RelPermalink "/zh" ""}}
+          {{ $link := printf "%s%s%s" $Origin "en" $NoLangPath }}
+          <a class="zh-en-item" id="english-item" href="{{ $link}}" data="en" >English</a>
+        {{ end }}
+
       </div>
-      
-      <!-- <div class="zh-en-box">
-        {{ range .Site.Languages }}
-        {{ if not (eq .Lang $.Site.Language.Lang) }}
-            <a href="{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
-        {{ end }}
-        {{ end }}
-      </div> -->
     </div>
       <script> (function (window) {
         var INSIGHT_CONFIG = { 

@@ -66,11 +66,9 @@
 
   <script>
     var prefix = ''
-    console.log('window.location.pathname: ', window.location.pathname);
     if (window.location.pathname.includes('en')) {
       prefix = '/en'
     }
-    console.log('prefix: ', prefix);
     window.location.href = `${prefix}${window?.LOCATIONURL}` || `${prefix}/compute/vm/intro/instance/`
   </script>
 </body>

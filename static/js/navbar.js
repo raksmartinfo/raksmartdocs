@@ -19,18 +19,18 @@ $(function () {
     },
   });
 
-  var pathname = window.location.pathname;
-  var origin = window.location.origin;
-  if (pathname.includes("en")) {
-    var currentPath = pathname.slice(3);
-    $("#zh-item").attr("href", `${origin}${currentPath}`);
-    $("#english-item")
-      .attr("href", `${origin}${pathname}`)
-      .css("color", "#00a971");
-  } else {
-    $("#zh-item").attr("href", `${origin}${pathname}`).css("color", "#00a971");
-    $("#english-item").attr("href", `${origin}/en${pathname}`);
-  }
+  // var pathname = window.location.pathname;
+  // var origin = window.location.origin;
+  // if (pathname.includes("en")) {
+  //   var currentPath = pathname.slice(3);
+  //   $("#zh-item").attr("href", `${origin}${currentPath}`);
+  //   $("#english-item")
+  //     .attr("href", `${origin}${pathname}`)
+  //     .css("color", "#00a971");
+  // } else {
+  //   $("#zh-item").attr("href", `${origin}${pathname}`).css("color", "#00a971");
+  //   $("#english-item").attr("href", `${origin}/en${pathname}`);
+  // }
   // $("#zh-item").click(function () {
   //   $(this).css("color", "#00a971");
   //   $("#english-item").css("color", "#fff");
