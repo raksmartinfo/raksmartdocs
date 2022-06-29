@@ -16,6 +16,8 @@ section1:
       url: "/security/key_management_service/intro/intro/"
     - title: 网络访问控制
       url: "/security/acl/intro/introduction/"
+    - title: web应用防火墙
+      url: "/security/waf/intro/introduction/"
 ---
 
 
