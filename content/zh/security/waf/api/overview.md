@@ -4,12 +4,12 @@ description: Test description
 draft: false
 weight: 2
 collapsible: false
-keyword: API请求, QingCloud, 青云, API概述, API
+keyword: API请求, PetaExpress, , API概述, API
 
 ---
 
 
-青云QingCloud向用户开放所有资源操作相关的API，我们的API是通过 HTTPS GET 方式来进行调用的。在调用我们的API之前，您需要先在我们的控制台申请API密钥，包括 API密钥ID ( access_key_id ) 和 API密钥的私钥 ( secret_access_key )。 API密钥ID 将作为参数包含在每一个请求中发送；而 API密钥的私钥 负责生成请求串的签名，API密钥的私钥 需要被妥善保管，请勿外传。
+PetaExpress向用户开放所有资源操作相关的API，我们的API是通过 HTTPS GET 方式来进行调用的。在调用我们的API之前，您需要先在我们的控制台申请API密钥，包括 API密钥ID ( access_key_id ) 和 API密钥的私钥 ( secret_access_key )。 API密钥ID 将作为参数包含在每一个请求中发送；而 API密钥的私钥 负责生成请求串的签名，API密钥的私钥 需要被妥善保管，请勿外传。
 
 **API 请求限制**
 
@@ -24,7 +24,7 @@ keyword: API请求, QingCloud, 青云, API概述, API
 
 | Name     | Description                                           | Notes                                                        |
 | -------- | ----------------------------------------------------- | ------------------------------------------------------------ |
-| API入口  | API 调用的 webservice 入口                            | 我们的API入口目前统一为：[https://api.qingcloud.com/iaas/](https://api.qingcloud.com/iaas/) |
+| API入口  | API 调用的 webservice 入口                            | 我们的API入口目前统一为：[https://api.petaexpress.com/iaas/](https://api.petaexpress.com/iaas/) |
 | 公共参数 | 每个 API 调用都需要包含公共参数                       | 详情可见 [_公共参数_](../parameters/)                        |
 | 指令名称 | API指令的名称 ( action )，例如 DescribeInstances 等。 | 完整的指令名称列表请参见 [_API指令列表_](/security/waf/api/command_list/add_waf_rules/)。 |
 | 指令参数 | 指令参数请参见每个指令的相关文档。                    |                                                              |
@@ -34,13 +34,13 @@ keyword: API请求, QingCloud, 青云, API概述, API
 一个典型的API请求如下所示，这是一个 DescribeInstances 的API请求:
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2013-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2013-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
+https://api.petaexpress.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2013-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2013-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
 ```
 
 为了方便查看，我们将文档中的请求都进行换行来显示:
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
+https://api.petaexpress.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 &action=DescribeInstances
 &expires=2013-08-29T07%3A42%3A25Z
 &limit=20
@@ -112,7 +112,7 @@ API的返回结果为 JSON 结构，这是一个 DescribeInstances 的API请求�
 
 >
 >
->*   **延迟请求**: 对于耗时请求，无法实时返回执行结果，例如 RunInstances 等。这些请求将以任务形式提交给QingCloud后台执行，并会在API请求返回中返回任务ID ( job_id )。这种情况下，用户可以通过查看资源状态来判断任务是否执行完成。例如，在提交 RunInstances 操作之后，用户可以通过 DescribeInstances 来查看 Instance 的状态以确认 Instance 是否创建成功。
+>*   **延迟请求**: 对于耗时请求，无法实时返回执行结果，例如 RunInstances 等。这些请求将以任务形式提交给PetaExpress后台执行，并会在API请求返回中返回任务ID ( job_id )。这种情况下，用户可以通过查看资源状态来判断任务是否执行完成。例如，在提交 RunInstances 操作之后，用户可以通过 DescribeInstances 来查看 Instance 的状态以确认 Instance 是否创建成功。
 >*   **实时请求**: 对于非耗时请求，会直接返回操作结果。
 >
 >

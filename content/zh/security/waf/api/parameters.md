@@ -4,7 +4,7 @@ description: Test description
 draft: false
 weight: 4
 collapsible: false
-keyword: 公共参数, QingCloud, 青云, API
+keyword: 公共参数, PetaExpress, , API
 
 ---
 
@@ -31,7 +31,7 @@ keyword: 公共参数, QingCloud, 青云, API
 
 
 
->[https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
+>[https://api.petaexpress.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.petaexpress.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
 >
 >&action=RunInstances
 >
