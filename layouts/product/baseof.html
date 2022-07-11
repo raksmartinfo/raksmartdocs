@@ -35,7 +35,7 @@
 				<h1 class="title">{{ .title }}</h1>
 			</div>
 			<!--添加导出全部按钮-->
-			<a class="pdf-all-download-btn" onclick="download_all_pdf('{{ .linkTitle  }}')"><i class="fa fa-download"></i>PDF</a> 
+			<!-- <a class="pdf-all-download-btn" onclick="download_all_pdf('{{ .linkTitle  }}')"><i class="fa fa-download"></i>PDF</a>  -->
 			<div class="row">
 			{{ range .children }}
 				<div class="col-sm-4">
@@ -165,7 +165,7 @@
         {{ block "main" . }}{{ end }}
 </main>
       
-    {{ partial "footer.html" . }}
+    <!-- {{ partial "footer.html" . }} -->
     {{ partialCached "scripts.html" . }}
   </body>
 
