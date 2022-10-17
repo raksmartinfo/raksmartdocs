@@ -43,8 +43,8 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.zh]
-title = "raksmartdocs 文档"
-description = "raksmartdocs 文档站点"
+title = "PetaExpress docs 文档"
+description = "PetaExpress 文档站点"
 languageName ="中文"
 contentDir = "content/zh"
 # Weight used for sorting.
@@ -54,8 +54,8 @@ time_format_blog = "2020-12-01"
 [languages.en]
     contentDir = "content/en" #English
     weight = 1
-    title = "raksmartdocs Docs"
-    description = "raksmartdocs Docs"
+    title = "PetaExpress Docs"
+    description = "PetaExpress Docs"
     languageName = "English" # Name shown in the main menu
     subtitle = "This is subtitle for this website"
     [languages.en.params]
